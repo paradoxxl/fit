@@ -1,8 +1,8 @@
 # fit
 
-[![license](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/tormoder/fit/raw/master/LICENSE)
-[![GoDoc](https://godoc.org/github.com/tormoder/fit?status.svg)](https://godoc.org/github.com/tormoder/fit)
-[![Travis Build Status](https://travis-ci.org/tormoder/fit.svg?branch=master)](https://travis-ci.org/tormoder/fit)
+[![license](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/paradoxxl/fit/raw/master/LICENSE)
+[![GoDoc](https://godoc.org/github.com/paradoxxl/fit?status.svg)](https://godoc.org/github.com/paradoxxl/fit)
+[![Travis Build Status](https://travis-ci.org/paradoxxl/fit.svg?branch=master)](https://travis-ci.org/paradoxxl/fit)
 
 <img src="https://raw.githubusercontent.com/hackraft/gophericons/master/png/2.png" width="225" align="right" hspace="25" />
 
@@ -45,24 +45,24 @@ Other profile versions may work, but have not been tested.
 Using Go modules:
 
 ```
-$ go get github.com/tormoder/fit@v0.4.0
+$ go get github.com/paradoxxl/fit@v0.4.0
 ```
 
 Using `$GOPATH`:
 
 ```
-$ go get github.com/tormoder/fit
+$ go get github.com/paradoxxl/fit
 ```
 
 ### About fit
 
-- [Example Usage](https://github.com/tormoder/fit/wiki/Example-Usage)
-- [Data Types](https://github.com/tormoder/fit/wiki/Data-Types)
-- [Main API Reference](https://github.com/tormoder/fit/wiki/Main-Api-Reference)
-- [Custom Product Profiles](https://github.com/tormoder/fit/wiki/Custom-Product-Profiles)
-- [Upcoming Features](https://github.com/tormoder/fit/wiki/Upcoming-Features)
-- [Contributing](https://github.com/tormoder/fit/blob/master/CONTRIBUTING.md)
-- [License](https://github.com/tormoder/fit/wiki/License)
+- [Example Usage](https://github.com/paradoxxl/fit/wiki/Example-Usage)
+- [Data Types](https://github.com/paradoxxl/fit/wiki/Data-Types)
+- [Main API Reference](https://github.com/paradoxxl/fit/wiki/Main-Api-Reference)
+- [Custom Product Profiles](https://github.com/paradoxxl/fit/wiki/Custom-Product-Profiles)
+- [Upcoming Features](https://github.com/paradoxxl/fit/wiki/Upcoming-Features)
+- [Contributing](https://github.com/paradoxxl/fit/blob/master/CONTRIBUTING.md)
+- [License](https://github.com/paradoxxl/fit/wiki/License)
 
 ### Contributors
 

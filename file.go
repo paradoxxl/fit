@@ -235,3 +235,61 @@ func (f *File) SegmentList() (*SegmentListFile, error) {
 	}
 	return f.segmentList, nil
 }
+
+func NewFile(t FileType) *File {
+	f := &File{}
+	switch t {
+	case FileTypeActivity:
+		f.activity = new(ActivityFile)
+		f.msgAdder = f.activity
+	case FileTypeDevice:
+		f.device = new(DeviceFile)
+		f.msgAdder = f.device
+	case FileTypeSettings:
+		f.settings = new(SettingsFile)
+		f.msgAdder = f.settings
+	case FileTypeSport:
+		f.sport = new(SportFile)
+		f.msgAdder = f.sport
+	case FileTypeWorkout:
+		f.workout = new(WorkoutFile)
+		f.msgAdder = f.workout
+	case FileTypeCourse:
+		f.course = new(CourseFile)
+		f.msgAdder = f.course
+	case FileTypeSchedules:
+		f.schedules = new(SchedulesFile)
+		f.msgAdder = f.schedules
+	case FileTypeWeight:
+		f.weight = new(WeightFile)
+		f.msgAdder = f.weight
+	case FileTypeTotals:
+		f.totals = new(TotalsFile)
+		f.msgAdder = f.totals
+	case FileTypeGoals:
+		f.goals = new(GoalsFile)
+		f.msgAdder = f.goals
+	case FileTypeBloodPressure:
+		f.bloodPressure = new(BloodPressureFile)
+		f.msgAdder = f.bloodPressure
+	case FileTypeMonitoringA:
+		f.monitoringA = new(MonitoringAFile)
+		f.msgAdder = f.monitoringA
+	case FileTypeActivitySummary:
+		f.activitySummary = new(ActivitySummaryFile)
+		f.msgAdder = f.activitySummary
+	case FileTypeMonitoringDaily:
+		f.monitoringDaily = new(MonitoringDailyFile)
+		f.msgAdder = f.monitoringDaily
+	case FileTypeMonitoringB:
+		f.monitoringB = new(MonitoringBFile)
+		f.msgAdder = f.monitoringB
+	case FileTypeSegment:
+		f.segment = new(SegmentFile)
+		f.msgAdder = f.segment
+	case FileTypeSegmentList:
+		f.segmentList = new(SegmentListFile)
+		f.msgAdder = f.segmentList
+	}
+	return f
+}

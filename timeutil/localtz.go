@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/bradfitz/latlong"
-	"github.com/tormoder/fit"
+	"github.com/paradoxxl/fit"
 )
 
 var (

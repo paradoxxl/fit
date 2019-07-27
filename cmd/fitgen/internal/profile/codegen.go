@@ -11,7 +11,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/tormoder/fit/internal/types"
+	"github.com/paradoxxl/fit/internal/types"
 )
 
 type codeGenerator struct {
@@ -386,9 +386,9 @@ func (g *codeGenerator) genGetterForComponents(msg *Msg, compFieldIndices []int)
 	// Add getter for target field if scale for component differs. Only
 	// relevant if # components > 1.
 
-	// TODO(tormoder): Verify if this is correct.
+	// TODO(paradoxxl): Verify if this is correct.
 
-	// TODO(tormoder): Add getter for subfields. There are no such cases in
+	// TODO(paradoxxl): Add getter for subfields. There are no such cases in
 	// the SDK now, expect 'gear_change_data' in the 'event' message, but
 	// scale there is '1' for every component and non for target fields,
 	// meaning getters are not neccecary.
@@ -628,7 +628,7 @@ func (g *codeGenerator) genProfile(types map[string]*Type, msgs []*Msg) {
 	g.p("import (")
 	g.p("\"reflect\"")
 	g.p()
-	g.p("\"github.com/tormoder/fit/internal/types\"")
+	g.p("\"github.com/paradoxxl/fit/internal/types\"")
 	g.p(")")
 
 	g.genVersionConsts()

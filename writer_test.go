@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/tormoder/fit"
+	"github.com/paradoxxl/fit"
 )
 
 func TestDecodeEncodeDecode(t *testing.T) {

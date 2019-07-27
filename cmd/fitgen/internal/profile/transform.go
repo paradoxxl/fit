@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tormoder/fit/internal/types"
+	"github.com/paradoxxl/fit/internal/types"
 )
 
 var camelRegex = regexp.MustCompile("[0-9A-Za-z]+")
@@ -361,7 +361,7 @@ func (f *Field) parseComponents(logger *log.Logger) error {
 
 	if len(components) == 1 {
 		// Set any scale on the "main" field.
-		// TODO(tormoder): Verify that this is correct.
+		// TODO(paradoxxl): Verify that this is correct.
 		f.parseScaleOffset()
 		return nil
 	}
